@@ -33,7 +33,7 @@ struct AppSettings {
 
     var vadSensitivity: Float {
         get {
-            if defaults.object(forKey: Keys.vadSensitivity) == nil { return 0.5 }
+            if defaults.object(forKey: Keys.vadSensitivity) == nil { return 0.7 }
             return defaults.float(forKey: Keys.vadSensitivity)
         }
         nonmutating set { defaults.set(newValue, forKey: Keys.vadSensitivity) }

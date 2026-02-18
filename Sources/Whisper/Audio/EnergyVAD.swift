@@ -13,8 +13,8 @@ final class EnergyVAD {
     private let minimumThreshold: Float = 0.005
 
     // Debounce durations (in seconds)
-    private let speechStartDebounce: TimeInterval = 0.200
-    private let silenceEndDebounce: TimeInterval = 0.700
+    private let speechStartDebounce: TimeInterval = 0.150
+    private let silenceEndDebounce: TimeInterval = 1.200
 
     // State
     private var noiseFloor: Float = 0.01
