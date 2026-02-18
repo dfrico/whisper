@@ -4,11 +4,13 @@ import Observation
 final class MenuBarController: NSObject, NSMenuDelegate {
     private var statusItem: NSStatusItem!
     private let appState: AppState
+    private let settingsWindowController: SettingsWindowController
     private var startStopItem: NSMenuItem!
     private var commitItem: NSMenuItem!
 
     init(appState: AppState) {
         self.appState = appState
+        self.settingsWindowController = SettingsWindowController(appState: appState)
         super.init()
         setupStatusItem()
     }
@@ -81,7 +83,6 @@ final class MenuBarController: NSObject, NSMenuDelegate {
     }
 
     @objc private func openSettings() {
-        NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
-        NSApp.activate(ignoringOtherApps: true)
+        settingsWindowController.showSettings()
     }
 }

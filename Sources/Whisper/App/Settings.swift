@@ -19,7 +19,7 @@ struct AppSettings {
     }
 
     var language: String {
-        get { defaults.string(forKey: Keys.language) ?? "en" }
+        get { defaults.string(forKey: Keys.language) ?? "auto" }
         nonmutating set { defaults.set(newValue, forKey: Keys.language) }
     }
 
