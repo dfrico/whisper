@@ -32,11 +32,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, @unchecked Sendable {
             guard let self else { return }
             do {
                 let ctx = try WhisperContext(modelPath: modelPath)
-                let service = WhisperTranscriptionService(
-                    context: ctx,
-                    language: settings.language,
-                    threads: settings.cpuThreads
-                )
+                let service = WhisperTranscriptionService(context: ctx)
                 let worker = TranscriptionWorker(
                     service: service,
                     utteranceBuffer: self.audioManager.utteranceBuffer,

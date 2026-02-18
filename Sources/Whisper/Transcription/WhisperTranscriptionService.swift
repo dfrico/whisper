@@ -2,30 +2,28 @@ import Foundation
 
 final class WhisperTranscriptionService: TranscriptionService {
     private let context: WhisperContext
-    private let language: String
-    private let threads: Int
 
-    init(context: WhisperContext, language: String = "en", threads: Int = 4) {
+    init(context: WhisperContext) {
         self.context = context
-        self.language = language
-        self.threads = threads
     }
 
     func transcribe(samples: [Float]) async throws -> String {
-        context.transcribe(
+        let settings = AppSettings()
+        return context.transcribe(
             samples: samples,
-            language: language,
+            language: settings.language,
             useBeamSearch: true,
-            threads: threads
+            threads: settings.cpuThreads
         )
     }
 
     func transcribePartial(samples: [Float]) async throws -> String {
-        context.transcribe(
+        let settings = AppSettings()
+        return context.transcribe(
             samples: samples,
-            language: language,
+            language: settings.language,
             useBeamSearch: false,
-            threads: threads
+            threads: settings.cpuThreads
         )
     }
 }
