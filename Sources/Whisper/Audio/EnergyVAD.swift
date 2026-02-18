@@ -9,7 +9,7 @@ final class EnergyVAD {
 
     // Adaptive noise floor parameters
     private let noiseFloorAlpha: Float = 0.995
-    private let thresholdMultiplier: Float = 3.0
+    private var thresholdMultiplier: Float = 3.0
     private let minimumThreshold: Float = 0.005
 
     // Debounce durations (in seconds)
@@ -22,9 +22,6 @@ final class EnergyVAD {
     private var lastTransitionTime: TimeInterval = 0
 
     /// Process a chunk of audio samples and return VAD result.
-    /// - Parameters:
-    ///   - samples: Audio samples buffer
-    ///   - timestamp: Current time for debouncing
     func process(_ samples: UnsafeBufferPointer<Float>, timestamp: TimeInterval) -> Result {
         let rms = computeRMS(samples)
 
@@ -52,6 +49,13 @@ final class EnergyVAD {
         }
 
         return Result(isSpeech: isSpeechActive, rmsLevel: rms)
+    }
+
+    /// Set sensitivity (0.0 = least sensitive, 1.0 = most sensitive).
+    /// Maps to threshold multiplier range 5.0 (least sensitive) to 1.5 (most sensitive).
+    func setSensitivity(_ sensitivity: Float) {
+        let clamped = max(0.0, min(1.0, sensitivity))
+        thresholdMultiplier = 5.0 - clamped * 3.5 // 5.0 at 0.0, 1.5 at 1.0
     }
 
     func reset() {

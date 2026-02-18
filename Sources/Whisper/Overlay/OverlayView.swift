@@ -7,7 +7,6 @@ struct OverlayView: View {
         VStack(alignment: .leading, spacing: 12) {
             // Status row
             HStack(spacing: 8) {
-                // Recording indicator
                 Circle()
                     .fill(statusColor)
                     .frame(width: 10, height: 10)
@@ -18,7 +17,6 @@ struct OverlayView: View {
 
                 Spacer()
 
-                // Speech badge
                 if appState.isSpeechDetected {
                     Text("SPEECH")
                         .font(.system(.caption2, design: .monospaced, weight: .bold))
@@ -50,13 +48,25 @@ struct OverlayView: View {
                 .frame(height: 4)
             }
 
-            // Transcript area
-            if !appState.liveTranscript.isEmpty {
-                Text(appState.liveTranscript)
-                    .font(.system(.body, design: .default))
-                    .foregroundStyle(.primary)
-                    .lineLimit(nil)
-                    .textSelection(.enabled)
+            // Transcript area — finalized text (primary) + live partial (secondary)
+            if !appState.finalTranscript.isEmpty || !appState.liveTranscript.isEmpty {
+                VStack(alignment: .leading, spacing: 4) {
+                    if !appState.finalTranscript.isEmpty {
+                        Text(appState.finalTranscript)
+                            .font(.system(.body, design: .default))
+                            .foregroundStyle(.primary)
+                            .lineLimit(nil)
+                            .textSelection(.enabled)
+                    }
+                    if !appState.liveTranscript.isEmpty {
+                        Text(appState.liveTranscript)
+                            .font(.system(.body, design: .default))
+                            .foregroundStyle(.secondary)
+                            .italic()
+                            .lineLimit(nil)
+                            .textSelection(.enabled)
+                    }
+                }
             } else if appState.isRecording {
                 Text("Listening…")
                     .font(.system(.body, design: .default))

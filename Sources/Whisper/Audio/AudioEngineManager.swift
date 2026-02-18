@@ -6,14 +6,24 @@ final class AudioEngineManager {
     private let appState: AppState
     private let audioEngine = AVAudioEngine()
     private let audioConverter = AudioConverter()
-    private let ringBuffer = RingBuffer()
+    let ringBuffer: RingBuffer
+    let utteranceBuffer: UtteranceBuffer
     private let energyVAD = EnergyVAD()
 
     private let vadQueue = DispatchQueue(label: "com.whisper.vad", qos: .userInitiated)
     private var isRunning = false
+    private var wasSpeechActive = false
 
-    init(appState: AppState) {
+    /// Called on main thread when speech state transitions (true = speech started, false = speech ended).
+    var onSpeechStateChanged: ((Bool) -> Void)?
+
+    /// Lookback duration in samples to prepend on speech start (~300ms at 16kHz).
+    private let lookbackSamples = 4800
+
+    init(appState: AppState, ringBuffer: RingBuffer = RingBuffer(), utteranceBuffer: UtteranceBuffer = UtteranceBuffer()) {
         self.appState = appState
+        self.ringBuffer = ringBuffer
+        self.utteranceBuffer = utteranceBuffer
     }
 
     func start() throws {
@@ -28,7 +38,9 @@ final class AudioEngineManager {
 
         try audioConverter.prepare(inputFormat: hardwareFormat)
         ringBuffer.reset()
+        utteranceBuffer.reset()
         energyVAD.reset()
+        wasSpeechActive = false
 
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: hardwareFormat) {
             [weak self] buffer, time in
@@ -47,8 +59,12 @@ final class AudioEngineManager {
         isRunning = false
     }
 
+    /// Update VAD sensitivity at runtime (0.0 = least sensitive, 1.0 = most sensitive).
+    func setVADSensitivity(_ sensitivity: Float) {
+        energyVAD.setSensitivity(sensitivity)
+    }
+
     private func handleAudioBuffer(_ buffer: AVAudioPCMBuffer, time: AVAudioTime) {
-        // Convert to 16kHz mono on the audio thread (lightweight)
         guard let converted = audioConverter.convert(input: buffer) else { return }
         guard let channelData = converted.floatChannelData?[0] else { return }
 
@@ -58,27 +74,54 @@ final class AudioEngineManager {
         // Write to ring buffer (lock-protected, fast)
         ringBuffer.write(samples)
 
-        // Dispatch VAD to dedicated queue
         // Copy samples for the VAD queue since the buffer will be reused
         let samplesCopy = Array(samples)
         vadQueue.async { [weak self] in
-            self?.processVAD(samplesCopy)
+            self?.processVADAndAccumulate(samplesCopy)
         }
     }
 
-    private func processVAD(_ samples: [Float]) {
+    private func processVADAndAccumulate(_ samples: [Float]) {
         let timestamp = ProcessInfo.processInfo.systemUptime
 
         let result = samples.withUnsafeBufferPointer { ptr in
             energyVAD.process(ptr, timestamp: timestamp)
         }
 
-        // Normalize RMS to a 0-1 range for display (RMS typically 0-0.3 for speech)
         let normalizedLevel = min(result.rmsLevel * 5.0, 1.0)
+        let isSpeech = result.isSpeech
 
-        DispatchQueue.main.async { [weak self] in
-            self?.appState.isSpeechDetected = result.isSpeech
-            self?.appState.audioLevel = normalizedLevel
+        // Detect speech start/end transitions
+        if isSpeech && !wasSpeechActive {
+            // Speech started — prepend lookback from ring buffer
+            let lookback = ringBuffer.read(count: lookbackSamples)
+            utteranceBuffer.append(lookback)
+            utteranceBuffer.append(samples)
+
+            wasSpeechActive = true
+            DispatchQueue.main.async { [weak self] in
+                self?.appState.isSpeechDetected = true
+                self?.appState.audioLevel = normalizedLevel
+                self?.onSpeechStateChanged?(true)
+            }
+        } else if !isSpeech && wasSpeechActive {
+            // Speech ended
+            wasSpeechActive = false
+            DispatchQueue.main.async { [weak self] in
+                self?.appState.isSpeechDetected = false
+                self?.appState.audioLevel = normalizedLevel
+                self?.onSpeechStateChanged?(false)
+            }
+        } else {
+            // During speech, accumulate audio
+            if isSpeech {
+                utteranceBuffer.append(samples)
+            }
+
+            DispatchQueue.main.async { [weak self] in
+                self?.appState.isSpeechDetected = isSpeech
+                self?.appState.audioLevel = normalizedLevel
+            }
         }
     }
 

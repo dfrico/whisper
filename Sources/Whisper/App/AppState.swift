@@ -1,4 +1,4 @@
-import Foundation
+import AppKit
 import Observation
 
 enum RecordingState: Equatable {
@@ -27,6 +27,9 @@ final class AppState {
     var isSpeechDetected: Bool = false
     var audioLevel: Float = 0.0
 
+    /// The frontmost app when recording started, used for auto-paste targeting.
+    var sourceApp: NSRunningApplication?
+
     var isRecording: Bool {
         recordingState == .recording
     }
@@ -51,7 +54,6 @@ final class AppState {
         if isRecording {
             recordingState = .finalizing
         }
-        // Actual commit logic will be handled by ClipboardManager/PasteInjector
     }
 
     func setError(_ message: String) {
