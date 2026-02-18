@@ -38,6 +38,12 @@ cp "$BINARY" "$MACOS_DIR/$APP_NAME"
 # Copy Info.plist
 cp "$PROJECT_DIR/Resources/Info.plist" "$CONTENTS_DIR/Info.plist"
 
+# Copy app icon
+if [ -f "$PROJECT_DIR/Resources/AppIcon.icns" ]; then
+    cp "$PROJECT_DIR/Resources/AppIcon.icns" "$RESOURCES_DIR/"
+    echo "Copied app icon"
+fi
+
 # Copy Metal shader library if present
 METALLIB="$LIB_DIR/ggml-metal.metallib"
 if [ -f "$METALLIB" ]; then
