@@ -20,6 +20,9 @@ final class AudioEngineManager {
     /// Lookback duration in samples to prepend on speech start (~300ms at 16kHz).
     private let lookbackSamples = 4800
 
+    /// Input gain multiplier (1.0 = no boost).
+    var inputGain: Float = 1.0
+
     init(appState: AppState, ringBuffer: RingBuffer = RingBuffer(), utteranceBuffer: UtteranceBuffer = UtteranceBuffer()) {
         self.appState = appState
         self.ringBuffer = ringBuffer
@@ -69,15 +72,27 @@ final class AudioEngineManager {
         guard let channelData = converted.floatChannelData?[0] else { return }
 
         let frameCount = Int(converted.frameLength)
-        let samples = UnsafeBufferPointer(start: channelData, count: frameCount)
+        let gain = inputGain
 
-        // Write to ring buffer (lock-protected, fast)
-        ringBuffer.write(samples)
+        // Apply gain and copy in one pass
+        var amplified = [Float](repeating: 0, count: frameCount)
+        if gain != 1.0 {
+            for i in 0..<frameCount {
+                amplified[i] = min(max(channelData[i] * gain, -1.0), 1.0)
+            }
+        } else {
+            amplified.withUnsafeMutableBufferPointer { dest in
+                dest.baseAddress!.update(from: channelData, count: frameCount)
+            }
+        }
 
-        // Copy samples for the VAD queue since the buffer will be reused
-        let samplesCopy = Array(samples)
+        // Write amplified samples to ring buffer
+        amplified.withUnsafeBufferPointer { buf in
+            ringBuffer.write(buf)
+        }
+
         vadQueue.async { [weak self] in
-            self?.processVADAndAccumulate(samplesCopy)
+            self?.processVADAndAccumulate(amplified)
         }
     }
 

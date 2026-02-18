@@ -29,6 +29,7 @@ private struct GeneralSettingsView: View {
     @State private var language: String = AppSettings().language
     @State private var cpuThreads: Int = AppSettings().cpuThreads
     @State private var vadSensitivity: Float = AppSettings().vadSensitivity
+    @State private var inputGain: Float = AppSettings().inputGain
     @State private var partialInterval: Double = AppSettings().partialUpdateInterval
     @State private var autoPaste: Bool = AppSettings().autoPasteEnabled
     @State private var hasAccessibility: Bool = CommitController.hasAccessibilityPermission()
@@ -55,6 +56,17 @@ private struct GeneralSettingsView: View {
                 .onChange(of: cpuThreads) { _, newValue in
                     AppSettings().cpuThreads = newValue
                 }
+
+            VStack(alignment: .leading) {
+                Text("Mic Gain: \(String(format: "%.1f×", inputGain))")
+                Slider(value: $inputGain, in: 1.0...5.0, step: 0.5)
+                    .onChange(of: inputGain) { _, newValue in
+                        AppSettings().inputGain = newValue
+                    }
+                Text("Boost microphone input volume (applies on next recording)")
+                    .font(.caption)
+                    .foregroundStyle(.tertiary)
+            }
 
             VStack(alignment: .leading) {
                 Text("VAD Sensitivity: \(String(format: "%.0f%%", vadSensitivity * 100))")

@@ -118,6 +118,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, @unchecked Sendable {
     private func startAudioCapture() {
         let settings = AppSettings()
         audioManager.setVADSensitivity(settings.vadSensitivity)
+        audioManager.inputGain = settings.inputGain
         transcriptionWorker?.partialInterval = settings.partialUpdateInterval
 
         do {

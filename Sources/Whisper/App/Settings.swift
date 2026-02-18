@@ -11,6 +11,7 @@ struct AppSettings {
         static let vadSensitivity = "vadSensitivity"
         static let autoPasteEnabled = "autoPasteEnabled"
         static let partialUpdateInterval = "partialUpdateInterval"
+        static let inputGain = "inputGain"
     }
 
     var selectedModelPath: String? {
@@ -50,5 +51,13 @@ struct AppSettings {
             return val > 0 ? val : 0.5
         }
         nonmutating set { defaults.set(newValue, forKey: Keys.partialUpdateInterval) }
+    }
+
+    var inputGain: Float {
+        get {
+            if defaults.object(forKey: Keys.inputGain) == nil { return 2.0 }
+            return defaults.float(forKey: Keys.inputGain)
+        }
+        nonmutating set { defaults.set(newValue, forKey: Keys.inputGain) }
     }
 }
