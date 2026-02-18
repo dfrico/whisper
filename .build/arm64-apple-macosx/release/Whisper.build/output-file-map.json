@@ -1,0 +1,103 @@
+{
+  "": {
+    "dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/Whisper.d",
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/Whisper.o",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/master.swiftdeps"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppDelegate.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppDelegate.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppState.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppState.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppState~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppState.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AppState.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/MenuBarController.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/MenuBarController.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/MenuBarController~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/MenuBarController.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/MenuBarController.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/SettingsView.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/SettingsView.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/SettingsView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/SettingsView.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/SettingsView.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/WhisperApp.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/WhisperApp.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/WhisperApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/WhisperApp.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/WhisperApp.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioConverter.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioConverter.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioConverter~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioConverter.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioConverter.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioEngineManager.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioEngineManager.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioEngineManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioEngineManager.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/AudioEngineManager.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/EnergyVAD.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/EnergyVAD.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/EnergyVAD~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/EnergyVAD.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/EnergyVAD.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/RingBuffer.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/RingBuffer.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/RingBuffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/RingBuffer.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/RingBuffer.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/ClipboardManager.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/ClipboardManager.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/ClipboardManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/ClipboardManager.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/ClipboardManager.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/PasteInjector.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/PasteInjector.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/PasteInjector~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/PasteInjector.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/PasteInjector.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyManager.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyManager.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyManager.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyManager.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyNames.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyNames.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyNames~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyNames.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/HotkeyNames.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayPanelController.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayPanelController.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayPanelController~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayPanelController.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayPanelController.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayView.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayView.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayView~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayView.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/OverlayView.dia"
+  },
+  "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Transcription/TranscriptionStub.swift": {
+    "object": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/TranscriptionStub.swift.o",
+    "swiftmodule": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/TranscriptionStub~partial.swiftmodule",
+    "swift-dependencies": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/TranscriptionStub.swiftdeps",
+    "diagnostics": "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/release/Whisper.build/TranscriptionStub.dia"
+  }
+}

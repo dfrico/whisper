@@ -1,0 +1,16 @@
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppDelegate.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppState.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/MenuBarController.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/SettingsView.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/WhisperApp.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioConverter.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioEngineManager.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/EnergyVAD.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/RingBuffer.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/ClipboardManager.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/PasteInjector.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyManager.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyNames.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayPanelController.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayView.swift
+/Users/dfrico/Developer/whisper-app/Sources/Whisper/Transcription/TranscriptionStub.swift

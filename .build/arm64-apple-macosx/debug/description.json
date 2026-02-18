@@ -1,0 +1,1087 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/Info.plist"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ar.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/ar.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ar.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/cs.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/cs.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/cs.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/de.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/de.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/de.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/en.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/en.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/en.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/es.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/es.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/es.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/fr.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/fr.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/fr.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/hu.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/hu.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/hu.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ja.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/ja.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ja.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ko.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/ko.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ko.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/nl.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/nl.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/nl.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/pt-br.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/pt-BR.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/pt-br.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ru.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/ru.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/ru.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/zh-hans.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/zh-Hans.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/zh-hans.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/zh-tw.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Localization/zh-TW.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts_KeyboardShortcuts.bundle/zh-tw.lproj/Localizable.strings"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.KeyboardShortcuts-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/sources",
+      "importPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/CarbonKeyboardShortcuts.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Key.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/KeyboardShortcuts.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/NSMenuItem++.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Name.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Recorder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/RecorderCocoa.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Shortcut.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Utilities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/ViewModifiers.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<KeyboardShortcuts-arm64-apple-macosx15.0-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "KeyboardShortcuts",
+      "moduleOutputPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules/KeyboardShortcuts.swiftmodule",
+      "objects" : [
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/CarbonKeyboardShortcuts.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Key.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/KeyboardShortcuts.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/NSMenuItem++.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Name.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Recorder.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/RecorderCocoa.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Shortcut.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Utilities.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/ViewModifiers.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/include/KeyboardShortcuts-Swift.h",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings"
+      ],
+      "outputFileMapPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/CarbonKeyboardShortcuts.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Key.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/KeyboardShortcuts.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/NSMenuItem++.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Name.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Recorder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/RecorderCocoa.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Shortcut.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Utilities.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/ViewModifiers.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules/KeyboardShortcuts.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/CarbonKeyboardShortcuts.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Key.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/KeyboardShortcuts.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/NSMenuItem++.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Name.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Recorder.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/RecorderCocoa.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Shortcut.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Utilities.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/ViewModifiers.swift",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.Whisper-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/sources",
+      "importPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/MenuBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/WhisperApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioConverter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioEngineManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/EnergyVAD.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/RingBuffer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/ClipboardManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/PasteInjector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyNames.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayPanelController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Transcription/TranscriptionStub.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules/KeyboardShortcuts.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Whisper",
+      "moduleOutputPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules/Whisper.swiftmodule",
+      "objects" : [
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AppDelegate.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AppState.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/MenuBarController.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/SettingsView.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/WhisperApp.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AudioConverter.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AudioEngineManager.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/EnergyVAD.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/RingBuffer.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/ClipboardManager.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/PasteInjector.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/HotkeyManager.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/HotkeyNames.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/OverlayPanelController.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/OverlayView.swift.o",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/TranscriptionStub.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Whisper_main",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "whisper_app"
+      ],
+      "outputFileMapPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AppState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/MenuBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/SettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/WhisperApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AudioConverter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AudioEngineManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/EnergyVAD.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/RingBuffer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/ClipboardManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/PasteInjector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/HotkeyManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/HotkeyNames.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/OverlayPanelController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/OverlayView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/TranscriptionStub.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules/Whisper.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppDelegate.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppState.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/MenuBarController.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/SettingsView.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/WhisperApp.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioConverter.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioEngineManager.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/EnergyVAD.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/RingBuffer.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/ClipboardManager.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/PasteInjector.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyManager.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyNames.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayPanelController.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayView.swift",
+        "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Transcription/TranscriptionStub.swift"
+      ],
+      "tempsPath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "KeyboardShortcuts" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "KeyboardShortcuts",
+      "-c",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/CarbonKeyboardShortcuts.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Key.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/KeyboardShortcuts.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/NSMenuItem++.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Name.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Recorder.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/RecorderCocoa.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Shortcut.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Utilities.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/ViewModifiers.swift",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/include/KeyboardShortcuts-Swift.h",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ],
+    "Whisper" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Whisper",
+      "-package-name",
+      "whisper_app",
+      "-c",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppDelegate.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppState.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/MenuBarController.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/SettingsView.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/WhisperApp.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioConverter.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioEngineManager.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/EnergyVAD.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/RingBuffer.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/ClipboardManager.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/PasteInjector.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyManager.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyNames.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayPanelController.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayView.swift",
+      "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Transcription/TranscriptionStub.swift",
+      "-I",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Whisper_main",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "whisper_app",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "KeyboardShortcuts" : [
+
+    ],
+    "Whisper" : [
+      "KeyboardShortcuts"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/CarbonKeyboardShortcuts.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Key.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/KeyboardShortcuts.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/NSMenuItem++.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Name.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Recorder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/RecorderCocoa.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Shortcut.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/Utilities.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/checkouts/KeyboardShortcuts/Sources/KeyboardShortcuts/ViewModifiers.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/sources"
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper-entitlement.plist"
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/AppState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/MenuBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/App/WhisperApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioConverter.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/AudioEngineManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/EnergyVAD.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Audio/RingBuffer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/ClipboardManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Commit/PasteInjector.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Hotkeys/HotkeyNames.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayPanelController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Overlay/OverlayView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/Sources/Whisper/Transcription/TranscriptionStub.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/sources"
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/CarbonKeyboardShortcuts.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Key.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/KeyboardShortcuts.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/NSMenuItem++.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Name.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Recorder.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/RecorderCocoa.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Shortcut.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/Utilities.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/ViewModifiers.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/KeyboardShortcuts.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AppState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AudioConverter.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/AudioEngineManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/ClipboardManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/EnergyVAD.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/HotkeyManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/HotkeyNames.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/MenuBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/OverlayPanelController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/OverlayView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/PasteInjector.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/RingBuffer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/SettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/TranscriptionStub.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.build/WhisperApp.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/Whisper.product/Objects.LinkFileList"
+    },
+    "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/dfrico/Developer/whisper-app/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}
