@@ -12,6 +12,7 @@ struct AppSettings {
         static let autoPasteEnabled = "autoPasteEnabled"
         static let partialUpdateInterval = "partialUpdateInterval"
         static let inputGain = "inputGain"
+        static let hideOnCommit = "hideOnCommit"
     }
 
     var selectedModelPath: String? {
@@ -59,5 +60,13 @@ struct AppSettings {
             return defaults.float(forKey: Keys.inputGain)
         }
         nonmutating set { defaults.set(newValue, forKey: Keys.inputGain) }
+    }
+
+    var hideOnCommit: Bool {
+        get {
+            if defaults.object(forKey: Keys.hideOnCommit) == nil { return true }
+            return defaults.bool(forKey: Keys.hideOnCommit)
+        }
+        nonmutating set { defaults.set(newValue, forKey: Keys.hideOnCommit) }
     }
 }

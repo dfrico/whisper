@@ -20,6 +20,11 @@ final class AudioEngineManager {
     /// Lookback duration in samples to prepend on speech start (~300ms at 16kHz).
     private let lookbackSamples = 4800
 
+    /// Tail padding: keep accumulating audio for this many samples after VAD says silence,
+    /// so trailing words aren't cut off (~500ms at 16kHz).
+    private let tailPaddingSamples = 8000
+    private var silenceSamplesAccumulated = 0
+
     /// Input gain multiplier (1.0 = no boost).
     var inputGain: Float = 1.0
 
@@ -44,6 +49,7 @@ final class AudioEngineManager {
         utteranceBuffer.reset()
         energyVAD.reset()
         wasSpeechActive = false
+        silenceSamplesAccumulated = 0
 
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: hardwareFormat) {
             [weak self] buffer, time in
@@ -112,6 +118,7 @@ final class AudioEngineManager {
             let lookback = ringBuffer.read(count: lookbackSamples)
             utteranceBuffer.append(lookback)
             utteranceBuffer.append(samples)
+            silenceSamplesAccumulated = 0
 
             wasSpeechActive = true
             DispatchQueue.main.async { [weak self] in
@@ -119,22 +126,38 @@ final class AudioEngineManager {
                 self?.appState.audioLevel = normalizedLevel
                 self?.onSpeechStateChanged?(true)
             }
-        } else if !isSpeech && wasSpeechActive {
-            // Speech ended
-            wasSpeechActive = false
-            DispatchQueue.main.async { [weak self] in
-                self?.appState.isSpeechDetected = false
-                self?.appState.audioLevel = normalizedLevel
-                self?.onSpeechStateChanged?(false)
-            }
-        } else {
-            // During speech, accumulate audio
-            if isSpeech {
-                utteranceBuffer.append(samples)
-            }
+        } else if isSpeech && wasSpeechActive {
+            // Continuing speech — accumulate and reset tail counter
+            utteranceBuffer.append(samples)
+            silenceSamplesAccumulated = 0
 
             DispatchQueue.main.async { [weak self] in
-                self?.appState.isSpeechDetected = isSpeech
+                self?.appState.isSpeechDetected = true
+                self?.appState.audioLevel = normalizedLevel
+            }
+        } else if !isSpeech && wasSpeechActive {
+            // VAD says silence but we were speaking — tail padding
+            utteranceBuffer.append(samples)
+            silenceSamplesAccumulated += samples.count
+
+            if silenceSamplesAccumulated >= tailPaddingSamples {
+                // Tail padding complete — now actually end the utterance
+                wasSpeechActive = false
+                silenceSamplesAccumulated = 0
+                DispatchQueue.main.async { [weak self] in
+                    self?.appState.isSpeechDetected = false
+                    self?.appState.audioLevel = normalizedLevel
+                    self?.onSpeechStateChanged?(false)
+                }
+            } else {
+                DispatchQueue.main.async { [weak self] in
+                    self?.appState.audioLevel = normalizedLevel
+                }
+            }
+        } else {
+            // Silence, not speaking
+            DispatchQueue.main.async { [weak self] in
+                self?.appState.isSpeechDetected = false
                 self?.appState.audioLevel = normalizedLevel
             }
         }

@@ -161,6 +161,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, @unchecked Sendable {
         )
 
         guard !text.isEmpty else {
+            if settings.hideOnCommit {
+                overlayController.hideOverlay()
+            }
             appState.recordingState = .idle
             return
         }
@@ -173,6 +176,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, @unchecked Sendable {
 
         appState.liveTranscript = ""
         appState.finalTranscript = ""
+
+        if settings.hideOnCommit {
+            overlayController.hideOverlay()
+        }
         appState.recordingState = .idle
     }
 }

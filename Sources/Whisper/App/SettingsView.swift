@@ -32,6 +32,7 @@ private struct GeneralSettingsView: View {
     @State private var inputGain: Float = AppSettings().inputGain
     @State private var partialInterval: Double = AppSettings().partialUpdateInterval
     @State private var autoPaste: Bool = AppSettings().autoPasteEnabled
+    @State private var hideOnCommit: Bool = AppSettings().hideOnCommit
     @State private var hasAccessibility: Bool = CommitController.hasAccessibilityPermission()
 
     var body: some View {
@@ -109,6 +110,11 @@ private struct GeneralSettingsView: View {
                     .font(.caption)
                 }
             }
+
+            Toggle("Hide overlay after commit", isOn: $hideOnCommit)
+                .onChange(of: hideOnCommit) { _, newValue in
+                    AppSettings().hideOnCommit = newValue
+                }
         }
         .formStyle(.grouped)
     }
