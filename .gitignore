@@ -4,3 +4,4 @@
 *.a
 vendor/lib/
 Whisper.app/
+.claude/settings.local.json
