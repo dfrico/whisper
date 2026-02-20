@@ -129,20 +129,15 @@ final class AppDelegate: NSObject, NSApplicationDelegate, @unchecked Sendable {
         transcriptionWorker?.stopPartialLoop()
 
         let settings = AppSettings()
-        let buffer = audioManager.utteranceBuffer
+        let samples = audioManager.sessionBuffer.readAll()
 
-        if buffer.count > 0 {
-            // Final inference on remaining audio, then commit
-            transcriptionWorker?.runFinalInference { [weak self] text in
+        if !samples.isEmpty {
+            // Re-process the entire session's audio in one pass
+            transcriptionWorker?.runReprocessInference(samples: samples) { [weak self] text in
                 guard let self else { return }
-                if !text.isEmpty {
-                    if self.appState.finalTranscript.isEmpty {
-                        self.appState.finalTranscript = text
-                    } else {
-                        self.appState.finalTranscript += " " + text
-                    }
-                }
-                buffer.reset()
+                self.appState.finalTranscript = text
+                self.appState.liveTranscript = ""
+                self.audioManager.utteranceBuffer.reset()
                 self.finishCommit(settings: settings)
             }
         } else {

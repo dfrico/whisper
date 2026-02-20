@@ -8,6 +8,7 @@ final class AudioEngineManager {
     private let audioConverter = AudioConverter()
     let ringBuffer: RingBuffer
     let utteranceBuffer: UtteranceBuffer
+    let sessionBuffer = UtteranceBuffer()
     private let energyVAD = EnergyVAD()
 
     private let vadQueue = DispatchQueue(label: "com.whisper.vad", qos: .userInitiated)
@@ -47,6 +48,7 @@ final class AudioEngineManager {
         try audioConverter.prepare(inputFormat: hardwareFormat)
         ringBuffer.reset()
         utteranceBuffer.reset()
+        sessionBuffer.reset()
         energyVAD.reset()
         wasSpeechActive = false
         silenceSamplesAccumulated = 0
@@ -117,7 +119,9 @@ final class AudioEngineManager {
             // Speech started — prepend lookback from ring buffer
             let lookback = ringBuffer.read(count: lookbackSamples)
             utteranceBuffer.append(lookback)
+            sessionBuffer.append(lookback)
             utteranceBuffer.append(samples)
+            sessionBuffer.append(samples)
             silenceSamplesAccumulated = 0
 
             wasSpeechActive = true
@@ -129,6 +133,7 @@ final class AudioEngineManager {
         } else if isSpeech && wasSpeechActive {
             // Continuing speech — accumulate and reset tail counter
             utteranceBuffer.append(samples)
+            sessionBuffer.append(samples)
             silenceSamplesAccumulated = 0
 
             DispatchQueue.main.async { [weak self] in
@@ -138,6 +143,7 @@ final class AudioEngineManager {
         } else if !isSpeech && wasSpeechActive {
             // VAD says silence but we were speaking — tail padding
             utteranceBuffer.append(samples)
+            sessionBuffer.append(samples)
             silenceSamplesAccumulated += samples.count
 
             if silenceSamplesAccumulated >= tailPaddingSamples {

@@ -65,6 +65,53 @@ final class TranscriptionWorker {
         }
     }
 
+    /// Re-process an entire session's audio through beam-search in a single pass.
+    /// Audio over 30s is chunked into ~30s windows; results are concatenated.
+    func runReprocessInference(samples: [Float], completion: @escaping (String) -> Void) {
+        jobID &+= 1
+        inferenceQueue.async { [weak self] in
+            guard let self else { return }
+            guard !samples.isEmpty else {
+                DispatchQueue.main.async { completion("") }
+                return
+            }
+
+            let chunkSize = 480_000 // 30s at 16kHz
+            var results: [String] = []
+
+            if samples.count <= chunkSize {
+                let text: String
+                do {
+                    text = try syncAwait { try await self.service.transcribe(samples: samples) }
+                } catch {
+                    text = ""
+                }
+                results.append(text)
+            } else {
+                var offset = 0
+                while offset < samples.count {
+                    let end = min(offset + chunkSize, samples.count)
+                    let chunk = Array(samples[offset..<end])
+                    let text: String
+                    do {
+                        text = try syncAwait { try await self.service.transcribe(samples: chunk) }
+                    } catch {
+                        text = ""
+                    }
+                    if !text.isEmpty {
+                        results.append(text)
+                    }
+                    offset = end
+                }
+            }
+
+            let fullText = results.joined(separator: " ")
+            DispatchQueue.main.async {
+                completion(fullText)
+            }
+        }
+    }
+
     private func runPartialInference(jobID: UInt64) {
         guard self.jobID == jobID else { return }
 
